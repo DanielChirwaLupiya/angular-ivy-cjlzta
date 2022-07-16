@@ -1,0 +1,12 @@
+<p style="text-align:center">Disbursements:</p>
+
+<p>Disbursement Amount, Disbursement Date, Customer Full Name</p>
+
+<ul>
+  <li *ngFor="let d of disbursements">
+    {{ d.disbursementAmount }}, {{ d.disbursementDate }},
+    {{ d.customerFullName }}
+  </li>
+</ul>
+
+<button type="button" (click)="onDownloadCSV($event)">Download Data</button>
